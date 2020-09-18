@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - imprimir numeros 
+ * main - imprimir numeros
  * description: imprimir base 10 pero nueva linia
  * Return: 0
  */
