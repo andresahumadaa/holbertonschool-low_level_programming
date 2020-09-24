@@ -2,6 +2,7 @@
 /**
  * print_numbers - imprimir de 0 a 9
  * Descripcion: imprimir del 0 al 9
+ * Return: Always 0
  */
 void print_numbers(void)
 {
