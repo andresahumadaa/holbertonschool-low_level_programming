@@ -2,8 +2,8 @@
 
 /**
  * _abs - valor entero
- * Description: valor absoluto de un entero
- * Return: 0
+ * @r: Number to evaluate.
+ * Return: Devuelve r cuando es valor absoluto positivo,
  */
 int _abs(int r)
 {
