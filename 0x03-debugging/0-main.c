@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
  * main - tests imprimimos si un numero es - o +
+ * description: imprimir numeros y decir si es positivo o negativo
  * Return: 0
  */
 int main(void)
