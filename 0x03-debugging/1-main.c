@@ -3,6 +3,7 @@
 
 /**
  * main - loop infinito
+ * @\\o/\n: Funny face
  * Return: 0
  */
 int main(void)
