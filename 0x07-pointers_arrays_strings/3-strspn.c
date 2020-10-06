@@ -15,9 +15,9 @@ while (s[i] != '\0')
 if (count != i)
 break;
 j= 0;
- while (accept[j])
+while (accept[j] !='0')
 {
-if (si[i] == accept[j])
+if (s[i] == accept[j])
 count += 1;
 j++;
 }
