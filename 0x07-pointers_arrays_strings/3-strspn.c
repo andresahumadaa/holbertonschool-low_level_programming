@@ -1,21 +1,21 @@
 #include "holberton.h"
- /**
- * _strspn - get the length of a prefix sub
+/**
+ * _strspn - get the length of a prefix substring
  * @s: string pointer
  * @accept: pointer characters to find
- * return: numebr of characters found
+ * Return: Number of characters found
  */
 unsigned int _strspn(char *s, char *accept)
 {
 int i, j, count;
-i= 0;
+i = 0;
 count = 0;
 while (s[i] != '\0')
 {
 if (count != i)
 break;
-j= 0;
-while (accept[j] !='0')
+j = 0;
+while (accept[j] != '\0')
 {
 if (s[i] == accept[j])
 count += 1;
