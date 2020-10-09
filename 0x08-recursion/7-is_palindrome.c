@@ -6,12 +6,10 @@
  */
 int is_palindrome(char *s)
 {
-  int l;
-
-  l = length(s);
-  return (find_palindrome(s, 0, l - 1));
+int l;
+l = length(s);
+return (find_palindrome(s, 0, l - 1));
 }
-
 /**
  * length - find string length
  * @s: entry string
