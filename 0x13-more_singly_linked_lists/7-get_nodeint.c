@@ -17,3 +17,4 @@ return (NULL);
 aux_head = aux_head->next;
 }
 return (aux_head);
+}
