@@ -15,3 +15,5 @@ while (aux_head)
 sum += aux_head->n;
 aux_head = aux_head->next;
 }
+return (sum);
+}
