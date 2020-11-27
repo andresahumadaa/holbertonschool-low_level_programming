@@ -5,32 +5,41 @@
  * @text_content: text to append at the end of the file
  * Return: 1 (Success) -1 (Failed)
  */
-int append_text_to_file(const char *filename, char *text_content)
+int _strlen(char *s)
 {
-int file_descriptor, f_d, len;
-if (!filename)
-return (-1);
-file_descriptor = open(filename, O_RDWR | O_APPEND);
-if (file_descriptor == -1)
-return (-1);
-if (text_content)
+int len = 0;
+while (*s != '\0')
 {
-len = _lenstring(text_content);
-f_d = write(file_descriptor, text_content, len);
-if (f_d == -1)
-return (-1);
+len++;
+s++;
 }
-return (1);
+return (len);
 }
 /**
- * _lenstring - find length of the string
- * @str: String
- * Return: number of bytes
+ *append_text_to_file - a function that appends text at the end of a file
+ *@filename: is the name of the file to create
+ *@text_content: s a NULL terminated string to write to the file
+ *Return: 1 on success, -1 on failure
  */
-int _lenstring(char *str)
+int append_text_to_file(const char *filename, char *text_content)
 {
-int i = 0;
-while (str[i])
-i++;
-return (i);
+int fd, write_char;
+if (filename == NULL)
+return (-1);
+fd = open(filename, O_WRONLY | O_APPEND);
+if (fd == -1)
+return (-1);
+if (text_content == NULL)
+{
+close(fd);
+return (1);
+}
+write_char = write(fd, text_content, _strlen(text_content));
+if (write_char == -1)
+{
+close(fd);
+return (-1);
+}
+close(fd);
+return (1);
 }
