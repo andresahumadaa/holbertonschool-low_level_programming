@@ -14,5 +14,6 @@ int factor(int n, int a);
 int prime(int n, int d);
 int length(char *s);
 int find_palindrome(char *s, int start, int end);
+int wildcmp(char *s1, char *s2);
 
 #endif
