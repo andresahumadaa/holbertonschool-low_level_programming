@@ -26,7 +26,7 @@ aux = *head;
 while (aux->next)
 {
 aux = aux->next;
-{
+}
 aux->next = new;
 new->prev = aux;
 new->next = NULL;
